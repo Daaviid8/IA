@@ -26,7 +26,7 @@ SVM es particularmente eficaz en problemas de **clasificación no lineal** media
      - **Kernel polinómico**: Para problemas no lineales con una relación polinómica entre las características.
      - **Kernel Gaussiano (RBF)**: Muy utilizado cuando no se tiene conocimiento previo de la relación entre las clases.
 
-3. **Máxima Margen**:
+3. **Máximo Margen**:
    - El principio clave de SVM es que maximiza el margen, es decir, la distancia entre el hiperplano y los puntos más cercanos de ambas clases. Un margen mayor se asocia con un modelo de clasificación más robusto y generalizable.
    
 ---
