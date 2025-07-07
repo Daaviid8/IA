@@ -1,4 +1,4 @@
-# 🧑‍🏫 **Support Vector Machines (SVM):**
+#  **Support Vector Machines (SVM):**
 
 ## 📌 ¿Qué es Support Vector Machine (SVM)?
 
