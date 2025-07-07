@@ -58,4 +58,5 @@ El término `P(y=1)/P(y=0)` se llama **odds** (probabilidad entre su complemento
 - **Estimación:** Se hace vía **máxima verosimilitud**
 - **Interpretación:** Coeficientes afectan los log-odds de la clase positiva
 
+![image](https://github.com/user-attachments/assets/96cf7473-d7bc-44ae-a213-584f00c309df)
 
