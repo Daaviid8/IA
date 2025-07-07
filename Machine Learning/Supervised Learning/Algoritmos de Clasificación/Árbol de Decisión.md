@@ -97,4 +97,5 @@ Para evitar **sobreajuste (overfitting)**, después de construir el árbol, se p
 ## 🔑 Resumen
 
 Un **Árbol de Decisión** es un modelo de **aprendizaje supervisado** que divide los datos en grupos homogéneos basándose en reglas sobre las características. Es fácil de interpretar y se usa tanto para **clasificación** como para **regresión**. Aunque poderosos, tienen limitaciones como el **sobreajuste**, pero esto se puede mitigar con técnicas como la **poda** y el uso de **Random Forests**.
+![image](https://github.com/user-attachments/assets/5d555fc7-d7fa-4756-bfc4-72fdad7c4c5b)
 
