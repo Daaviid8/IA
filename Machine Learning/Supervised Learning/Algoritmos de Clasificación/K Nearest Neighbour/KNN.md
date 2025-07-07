@@ -13,13 +13,11 @@
    - Para predecir la clase de un nuevo punto, calculamos la distancia entre este punto y los puntos de entrenamiento. Las distancias más comunes son:
    
    - **Distancia Euclidiana** (usada generalmente para datos continuos):
-\[
-d(x, y) = \sqrt{\sum_{i=1}^{n} (x_i - y_i)^2}
-\]
+![image](https://github.com/user-attachments/assets/1fccbeea-6206-4976-9a3d-992c53674848)
+
    - **Distancia Manhattan** (cuando las características son discretas):
-     \[
-     d(x, y) = \sum_{i=1}^{n} |x_i - y_i|
-     \]
+![image](https://github.com/user-attachments/assets/8e166114-d751-4f0e-ae52-31436731524f)
+
    
    - Donde \( x \) y \( y \) son dos puntos en el espacio de características, y \(n\) es el número de características.
 
@@ -33,11 +31,10 @@ d(x, y) = \sqrt{\sum_{i=1}^{n} (x_i - y_i)^2}
 
 ## 📊 **Fórmula para Predicción de Clase:**
 
-La predicción de la clase \( \hat{y} \) para un nuevo punto \( x \) es:
+La predicción de la clase \( y^ \) para un nuevo punto \( x \) es:
 
-\[
-\hat{y} = \text{modo}(y_1, y_2, \dots, y_K)
-\]
+![image](https://github.com/user-attachments/assets/339e8100-ad1f-4f66-ae1e-540dab94520c)
+
 
 Donde:
 - \( y_1, y_2, \dots, y_K \) son las clases de los \(K\) vecinos más cercanos.
@@ -71,9 +68,8 @@ Donde:
 ## 📏 **Resumen Matemático de KNN**:
 
 1. Para cada punto \( x \) a clasificar, calculamos la distancia \( d(x, x_i) \) entre \( x \) y todos los puntos \( x_i \) del conjunto de entrenamiento:
-   \[
-   d(x, x_i) = \sqrt{\sum_{i=1}^{n} (x_i - x)^2}
-   \]
+![image](https://github.com/user-attachments/assets/fa1aa760-43ed-47e2-a8cb-54a503c09a55)
+
 
 2. Seleccionamos los \( K \) vecinos más cercanos y realizamos la **votación mayoritaria** para determinar la clase de \( x \).
 
