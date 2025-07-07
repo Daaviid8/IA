@@ -26,9 +26,8 @@ Donde:
 
 Naive Bayes asume que las características \(x_1, x_2, ..., x_n\) son **independientes** entre sí, es decir:
 
-\[
-P(X | C_k) = P(x_1, x_2, ..., x_n | C_k) = \prod_{i=1}^{n} P(x_i | C_k)
-\]
+![image](https://github.com/user-attachments/assets/a358b3bb-5e18-4251-8cf8-3626cac3cf38)
+
 
 Este supuesto simplifica enormemente los cálculos, permitiendo que el modelo sea extremadamente rápido y eficiente.
 
