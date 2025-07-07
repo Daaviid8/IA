@@ -1,4 +1,4 @@
-# 📊 Regresión Logística: Explicación Clara y Rigurosa
+# 📊 Regresión Logística: 
 
 ## 📌 ¿Qué es la regresión logística?
 
