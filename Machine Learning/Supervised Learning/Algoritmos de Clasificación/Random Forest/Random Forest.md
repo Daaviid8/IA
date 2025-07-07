@@ -1,4 +1,4 @@
-# 🌳 Random Forest: Explicación Clara y Rigurosa
+# 🌳 Random Forest
 
 ## 📌 ¿Qué es Random Forest?
 
