@@ -169,7 +169,8 @@
   - Text-to-Image
   - Image-to-Text
   - Video Generation
-  - 
+
+  
 ## Herramientas y Frameworks Recomendados
 
 ### Programación
@@ -187,14 +188,3 @@
 - **Repositorios**: Kaggle, UCI ML Repository, Papers with Code
 - **Datasets**: ImageNet, COCO, MNIST, IMDB Reviews
 - **Benchmarks**: GLUE, SuperGLUE, BLEU, ROUGE
-
----
-
-## Ruta de Aprendizaje Sugerida
-
-1. **Fundamentos** (1-2 meses): Matemáticas, Estadística, Python
-2. **Machine Learning Básico** (2-3 meses): Supervised/Unsupervised Learning
-3. **Deep Learning** (3-4 meses): Neural Networks, CNN, RNN
-4. **Especialización** (3-6 meses): Elegir 2-3 áreas de interés
-5. **Proyectos Prácticos** (Continuo): Implementar proyectos reales
-6. **Investigación y Tendencias** (Continuo): Papers, conferencias, comunidad
