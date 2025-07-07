@@ -112,5 +112,5 @@ Al igual que otros modelos de clasificación, el rendimiento de SVM se puede eva
 
 ## 🔑 Resumen
 
-**Support Vector Machine (SVM)** es un algoritmo poderoso para clasificación y regresión, conocido por su capacidad para encontrar el **hiperplano óptimo** que separa las clases de manera efectiva. Utiliza la **máxima margen** para generalizar bien los datos y es capaz de manejar tanto problemas lineales como no lineales mediante el uso de **kernels**. Si bien es muy efectivo, SVM puede ser computacionalmente costoso y sensible a los valores atípicos, especialmente en conjuntos de datos grandes.
+**Support Vector Machine (SVM)** es un algoritmo poderoso para clasificación y regresión, conocido por su capacidad para encontrar el **hiperplano óptimo** que separa las clases de manera efectiva. Utiliza el **máximo margen** para generalizar bien los datos y es capaz de manejar tanto problemas lineales como no lineales mediante el uso de **kernels**. Si bien es muy efectivo, SVM puede ser computacionalmente costoso y sensible a los valores atípicos, especialmente en conjuntos de datos grandes.
 
