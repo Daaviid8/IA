@@ -7,7 +7,7 @@
 ## 🔑 **¿Cómo Funciona KNN?**
 
 1. **Definir K**: 
-   - Se selecciona el parámetro **K**, que representa la cantidad de vecinos más cercanos que se usarán para clasificar un nuevo punto. Ejemplo: \( K = 5 \).
+   - Se selecciona el parámetro **K**, que representa la cantidad de vecinos más cercanos que se usarán para clasificar un nuevo punto. Ejemplo: \( K = 9 \).
 
 2. **Cálculo de la Distancia**: 
    - Para predecir la clase de un nuevo punto, calculamos la distancia entre este punto y los puntos de entrenamiento. Las distancias más comunes son:
@@ -90,7 +90,8 @@ Donde:
 
 ## 🧑‍💻 **Ejemplo Visual con KNN**
 
-En una visualización 2D, el algoritmo KNN clasificaría un nuevo punto según la mayoría de las clases de los **K puntos más cercanos** en el espacio de características. La frontera de decisión es una línea que divide el espacio en regiones, donde cada región corresponde a una clase.
+![image](https://github.com/user-attachments/assets/e714fa67-d310-48ae-ae99-89b85ee7a449)
+
 
 ---
 
