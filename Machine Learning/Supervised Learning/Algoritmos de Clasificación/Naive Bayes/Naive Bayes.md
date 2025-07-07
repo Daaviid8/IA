@@ -1,4 +1,4 @@
-# 🧑‍🏫 **Naive Bayes:**
+# **Naive Bayes:**
 
 ## 📌 ¿Qué es Naive Bayes?
 
