@@ -43,11 +43,10 @@ El algoritmo decide qué característica usar para dividir los datos basándose 
 - **Entropía**: Mide la incertidumbre o el desorden de un conjunto de datos. La entropía es mínima cuando todos los elementos de un nodo pertenecen a la misma clase.
 
   Fórmula de la entropía:
-  \[
-  Entropía(S) = - \sum_{i=1}^{k} p_i \log_2(p_i)
-  \]
+![image](https://github.com/user-attachments/assets/6a925579-e822-4d62-8009-29a8f5c50154)
+
   Donde:
-  - \( p_i \) es la proporción de elementos de la clase \( i \) en el nodo \( S \).
+  -  p_i es la proporción de elementos de la clase \( i \) en el nodo \( S \).
 
 ### 2. **División Recursiva**
 
