@@ -32,10 +32,17 @@ El algoritmo decide qué característica usar para dividir los datos basándose 
 
 - **Índice de Gini**: Mide la "impureza" de un nodo. El valor de Gini es 0 cuando todos los elementos pertenecen a la misma clase (perfectamente puro), y el valor es 1 cuando las clases están igualmente distribuidas.
   
-  Fórmula del Índice de Gini para una clase \( C \):
-  \[
-  Gini(C) = 1 - \sum_{i=1}^{k} p_i^2
-  \]
+  Fórmula del Índice de Gini para una clase:
+  Gini(S)=1− 
+i=1
+∑
+k
+​
+ p 
+i
+2
+​
+
   Donde:
   - \( p_i \) es la proporción de elementos de la clase \( i \) dentro de un nodo.
   - \( k \) es el número total de clases.
