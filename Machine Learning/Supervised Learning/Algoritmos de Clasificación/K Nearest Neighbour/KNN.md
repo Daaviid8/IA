@@ -13,9 +13,9 @@
    - Para predecir la clase de un nuevo punto, calculamos la distancia entre este punto y los puntos de entrenamiento. Las distancias más comunes son:
    
    - **Distancia Euclidiana** (usada generalmente para datos continuos):
-     \[
-     d(x, y) = \sqrt{\sum_{i=1}^{n} (x_i - y_i)^2}
-     \]
+\[
+d(x, y) = \sqrt{\sum_{i=1}^{n} (x_i - y_i)^2}
+\]
    - **Distancia Manhattan** (cuando las características son discretas):
      \[
      d(x, y) = \sum_{i=1}^{n} |x_i - y_i|
