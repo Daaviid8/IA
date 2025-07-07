@@ -114,3 +114,4 @@ Este supuesto simplifica enormemente los cálculos, permitiendo que el modelo se
 
 **Naive Bayes** es un algoritmo de clasificación sencillo pero eficaz, basado en el **Teorema de Bayes** y en el supuesto de que las características son **independientes**. A pesar de este supuesto "naive", ha demostrado ser altamente efectivo en problemas de clasificación de texto y otros problemas de alta dimensión, como la detección de spam. Sus ventajas incluyen rapidez, facilidad de implementación y buen rendimiento con conjuntos de datos pequeños. Sin embargo, puede no ser adecuado cuando las características están correlacionadas o no siguen las distribuciones asumidas.
 
+![image](https://github.com/user-attachments/assets/852dab27-0fb0-4da0-b3ef-753fc5df8cd8)
