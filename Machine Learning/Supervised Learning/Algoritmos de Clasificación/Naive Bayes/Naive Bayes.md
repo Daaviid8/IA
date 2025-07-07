@@ -12,9 +12,8 @@ A pesar de su suposición de independencia, **Naive Bayes** puede ser muy efecti
 
 El algoritmo de Naive Bayes se basa en el **Teorema de Bayes**, que calcula la probabilidad de una clase **\(C_k\)** dado un conjunto de características \(X = (x_1, x_2, ..., x_n)\) usando la fórmula:
 
-\[
-P(C_k | X) = \frac{P(X | C_k) P(C_k)}{P(X)}
-\]
+![image](https://github.com/user-attachments/assets/ba524b5c-209a-433e-b2f0-93f67377b89a)
+
 
 Donde:
 
