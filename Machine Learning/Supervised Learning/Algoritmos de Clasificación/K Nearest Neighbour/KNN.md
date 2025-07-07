@@ -37,7 +37,7 @@ La predicción de la clase \( y^ \) para un nuevo punto \( x \) es:
 
 
 Donde:
-- \( y_1, y_2, \dots, y_K \) son las clases de los \(K\) vecinos más cercanos.
+- \( y_1, y_2, ... , y_K \) son las clases de los \(K\) vecinos más cercanos.
 - **Modo** significa la clase que más veces aparece entre ellos.
 
 ---
