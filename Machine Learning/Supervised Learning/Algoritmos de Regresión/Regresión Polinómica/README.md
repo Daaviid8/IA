@@ -65,8 +65,7 @@ Además, es común utilizar `Pipeline` para combinar el preprocesamiento (genera
 
 ## 📈 Ejemplo gráfico
 
-![Regresión Polinómica](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Polynomialregression.svg/512px-Polynomialregression.svg.png)
-
+![image](https://github.com/user-attachments/assets/ffa86729-2698-4f85-9047-e1c12fe1d5ee)
 *Comparación entre regresión lineal (línea recta) y polinómica (curva).*
 
 ---
