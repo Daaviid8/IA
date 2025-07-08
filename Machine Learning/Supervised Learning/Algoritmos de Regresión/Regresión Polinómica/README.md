@@ -1,4 +1,4 @@
-# 🧮 Regresión Polinómica en Machine Learning
+# 🧮 Regresión Polinómica:
 
 La regresión polinómica es una extensión de la regresión lineal que permite modelar relaciones no lineales entre las variables de entrada y la variable objetivo. Aunque el modelo sigue siendo lineal en los coeficientes, se introducen potencias (polinomios) de las variables de entrada para capturar curvas en los datos.
 
