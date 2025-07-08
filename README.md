@@ -10,7 +10,7 @@
   - Naive Bayes
   - K-Nearest Neighbors (KNN)
 - **Algoritmos de Regresión**
-  - Regresión Linear
+  - Regresión Lineal
   - Regresión Polinomial
   - Ridge/Lasso Regression
   - Elastic Net
