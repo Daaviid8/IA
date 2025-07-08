@@ -1,4 +1,4 @@
-# 📈 Regresión Lineal: Concepto, Utilidades y Casos de Uso
+# 📈 Regresión Lineal
 
 La **regresión lineal** es uno de los algoritmos más sencillos y fundamentales del **aprendizaje supervisado**. Su objetivo es **modelar la relación lineal** entre una o más variables independientes (características) y una variable dependiente (resultado numérico).
 
