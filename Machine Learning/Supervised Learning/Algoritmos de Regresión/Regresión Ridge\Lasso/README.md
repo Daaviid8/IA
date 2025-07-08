@@ -21,10 +21,12 @@ Lasso	- Elimina variables irrelevantes automáticamente
 ---
 
 ##  🧪 Casos de Uso
-Escenario	Técnica recomendada
-Muchas variables correlacionadas	Ridge
-Reducción automática de características	Lasso
-Prevención de sobreajuste	Ambos
+| Escenario                               | Técnica recomendada |
+| --------------------------------------- | ------------------- |
+| Muchas variables correlacionadas        | Ridge               |
+| Reducción automática de características | Lasso               |
+| Prevención de sobreajuste               | Ambos               |
+
 ---
 
 ##  ⚠️ Limitaciones
@@ -38,13 +40,15 @@ Ambos pueden tener bajo rendimiento si no se ajusta adecuadamente la regularizac
 ---
 
 ##  📊 Comparación rápida
-Característica	Ridge Regression	Lasso Regression
-Penalización	L2	L1
-Reduce coeficientes	Sí	Sí
-Coeficientes en cero	No	Sí (puede eliminar variables)
-Selección de variables	No	Sí
-Interpretabilidad	Media	Alta
-Multicolinealidad	Bien manejada	Puede ser un problema
+| Característica         | Ridge Regression | Lasso Regression              |
+| ---------------------- | ---------------- | ----------------------------- |
+| Penalización           | L2               | L1                            |
+| Reduce coeficientes    | Sí               | Sí                            |
+| Coeficientes en cero   | No               | Sí (puede eliminar variables) |
+| Selección de variables | No               | Sí                            |
+| Interpretabilidad      | Media            | Alta                          |
+| Multicolinealidad      | Bien manejada    | Puede ser un problema         |
+
 ---
 
 ##  📈 Visualización
