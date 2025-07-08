@@ -1,85 +1,42 @@
-# 🧮 Regresión Polinómica en Machine Learning
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.datasets import load_iris
+from sklearn.linear_model import LinearRegression
+from sklearn.preprocessing import PolynomialFeatures
+from sklearn.pipeline import make_pipeline
+from sklearn.metrics import mean_squared_error, r2_score
+from sklearn.model_selection import train_test_split
 
-La regresión polinómica es una extensión de la regresión lineal que permite modelar relaciones no lineales entre las variables de entrada y la variable objetivo. Aunque el modelo sigue siendo lineal en los coeficientes, se introducen potencias (polinomios) de las variables de entrada para capturar curvas en los datos.
+# Cargar datos
+iris = load_iris()
+X = iris.data[:, [3]]  # Largo del pétalo
+y = iris.data[:, 0]    # Largo del sépalo
 
----
+# División de datos
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-## 🎯 ¿Qué hace?
+# Modelo polinómico (grado 2)
+grado = 2
+modelo = make_pipeline(PolynomialFeatures(grado), LinearRegression())
+modelo.fit(X_train, y_train)
 
-En lugar de ajustar una línea recta, ajusta una curva (parábola, cúbica, etc.) generando nuevos atributos a partir de las potencias de las variables originales. De esta forma, permite modelar relaciones más complejas que no pueden ser representadas por una regresión lineal simple.
+# Predicción
+y_pred = modelo.predict(X_test)
 
----
+# Evaluación
+print("MSE:", mean_squared_error(y_test, y_pred))
+print("R²:", r2_score(y_test, y_pred))
 
-## 🧠 ¿Por qué usar regresión polinómica?
-
-- Captura relaciones no lineales entre las variables.
-- Es flexible y puede aproximarse a muchas funciones.
-- Permite mejorar el rendimiento sin recurrir a modelos más complejos como redes neuronales o árboles de decisión.
-
----
-
-## ⚙️ ¿Cómo se implementa?
-
-En `scikit-learn`, se utiliza `PolynomialFeatures` para generar los términos polinomiales, que luego se usan como entrada en un modelo de regresión lineal.
-
-Además, es común utilizar `Pipeline` para combinar el preprocesamiento (generación de polinomios) con el modelo de entrenamiento, facilitando la implementación y validación.
-
----
-
-## ✅ Utilidades
-
-- Predecir fenómenos que presentan una tendencia curva.
-- Mejorar un modelo de regresión lineal cuando los residuos muestran patrones.
-- Funciona bien en conjuntos de datos con relaciones suaves y continuas.
-
----
-
-## 🧪 Casos de Uso
-
-| Área         | Aplicación                                          |
-|--------------|-----------------------------------------------------|
-| Salud        | Modelar la relación dosis-efecto con curvatura      |
-| Finanzas     | Predecir precios de activos con comportamiento no lineal |
-| Física       | Modelar trayectorias o comportamientos cuadráticos  |
-| Ingeniería   | Modelar fenómenos físicos complejos (resistencia, velocidad, fricción) |
-
----
-
-## ⚠️ Limitaciones
-
-1. Riesgo alto de sobreajuste si se usa un grado muy alto.
-2. Requiere escalado o normalización en algunos casos.
-3. Poca capacidad de generalización fuera del rango de entrenamiento.
-4. Puede volverse ineficiente con muchos atributos y grados altos.
-5. Menor interpretabilidad que la regresión lineal simple.
-
----
-
-## 📊 Métricas comunes
-
-- Error cuadrático medio (MSE)
-- Error absoluto medio (MAE)
-- R² (coeficiente de determinación)
-
----
-
-## 📈 Ejemplo gráfico
-
-![Regresión Polinómica](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Polynomialregression.svg/512px-Polynomialregression.svg.png)
-
-*Comparación entre regresión lineal (línea recta) y polinómica (curva).*
-
----
-
-## 📌 En resumen
-
-| Característica       | Detalle                              |
-|----------------------|--------------------------------------|
-| Tipo de modelo       | Supervisado, regresión no lineal     |
-| Tipo de salida       | Variable continua                    |
-| Complejidad          | Media                                |
-| Interpretabilidad    | Media-baja                           |
-| Requiere preprocesado| Sí (PolynomialFeatures)              |
-| Riesgo de overfitting| Alto si el grado no se regula        |
-
----
+# Gráfico
+plt.figure(figsize=(8, 5))
+plt.scatter(X_test, y_test, color='blue', label='Datos reales')
+x_range = np.linspace(X_test.min(), X_test.max(), 100).reshape(-1, 1)
+y_range_pred = modelo.predict(x_range)
+plt.plot(x_range, y_range_pred, color='green', label='Regresión polinómica (grado 2)')
+plt.xlabel('Largo del pétalo (cm)')
+plt.ylabel('Largo del sépalo (cm)')
+plt.title('Regresión Polinómica - Dataset Iris')
+plt.legend()
+plt.grid(True)
+plt.tight_layout()
+plt.show()
