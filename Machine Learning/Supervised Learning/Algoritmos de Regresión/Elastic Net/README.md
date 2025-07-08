@@ -19,10 +19,19 @@ $$
 
 donde:
 
-- \( \alpha \) controla la fuerza total de la regularización,
-- \( \lambda \in [0,1] \) es el parámetro `l1_ratio` que define la mezcla entre L1 y L2,
-- \( \|\beta\|_1 \) es la norma L1 (suma de valores absolutos),
-- \( \|\beta\|_2^2 \) es la norma L2 al cuadrado.
+Donde:
+
+- \( J(\beta) \) es la **función objetivo** que queremos minimizar para encontrar los mejores coeficientes \(\beta\).
+- \( n \) es el número total de muestras en el dataset.
+- \( y_i \) es el valor real de la variable objetivo para la muestra \(i\).
+- \( \hat{y}_i \) es el valor predicho por el modelo para la muestra \(i\).
+- \( \beta \) es el vector de coeficientes del modelo (los parámetros que queremos aprender).
+- \( \|\beta\|_1 = \sum_{j} |\beta_j| \) es la norma L1 (suma de valores absolutos de los coeficientes).
+- \( \|\beta\|_2^2 = \sum_{j} \beta_j^2 \) es la norma L2 al cuadrado (suma de los cuadrados de los coeficientes).
+- \( \alpha \) controla la fuerza total de la regularización (qué tanto penalizamos la complejidad del modelo).
+- \( \lambda \) (o `l1_ratio`) controla la proporción entre penalización L1 y L2:
+  - Cuando \( \lambda = 1 \), Elastic Net es igual a Lasso (solo L1).
+  - Cuando \( \lambda = 0 \), Elastic Net es igual a Ridge (solo L2).
 
 ## 🧩 ¿En qué casos se usa?
 
