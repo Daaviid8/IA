@@ -94,6 +94,6 @@ El resultado final es un árbol llamado dendrograma que muestra cómo los cluste
 | Salida          | Dendrograma y clusters jerárquicos      |
 | Parámetros      | Tipo de enlace, medida de distancia, criterio de corte |
 | Distancia usada | Euclidiana u otras métricas             |
-| Complejidad     | Costoso para datos grandes (usualmente $O(n^2)$ a $O(n^3)$) |
+| Complejidad     | Costoso para datos grandes (usualmente $O(n^2)$ a $O(n^3)$ ) |
 
 ---
