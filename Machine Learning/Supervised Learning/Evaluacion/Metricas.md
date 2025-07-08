@@ -10,9 +10,7 @@ Cuando entrenamos modelos de machine learning, necesitamos medir qué tan bien e
 - **¿Qué mide?** La proporción de predicciones correctas (tanto positivas como negativas) sobre el total de datos.
 - **Fórmula:**
 
-  $$
-  \text{Accuracy} = \frac{TP + TN}{TP + TN + FP + FN}
-  $$
+  $$\text{Accuracy} = \frac{TP + TN}{TP + TN + FP + FN}$$
 
   Donde:  
   - $TP$: Verdaderos Positivos  
