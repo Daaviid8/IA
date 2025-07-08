@@ -38,21 +38,15 @@ Para fusionar clusters, se necesitan formas de medir la distancia entre grupos d
 
 - **Enlace sencillo (Single linkage):**
 
-  $$
-  d(C_i, C_j) = \min_{x \in C_i, y \in C_j} \|x - y\|
-  $$
+  $$d(C_i, C_j) = \min_{x \in C_i, y \in C_j} \|x - y\|$$
 
 - **Enlace completo (Complete linkage):**
 
-  $$
-  d(C_i, C_j) = \max_{x \in C_i, y \in C_j} \|x - y\|
-  $$
+  $$d(C_i, C_j) = \max_{x \in C_i, y \in C_j} \|x - y\|$$
 
 - **Enlace promedio (Average linkage):**
 
-  $$
-  d(C_i, C_j) = \frac{1}{|C_i||C_j|} \sum_{x \in C_i} \sum_{y \in C_j} \|x - y\|
-  $$
+  $$d(C_i, C_j) = \frac{1}{|C_i||C_j|} \sum_{x \in C_i} \sum_{y \in C_j} \|x - y\|$$
 
 - **Enlace de Ward (Ward linkage):** Minimiza el aumento en la suma de cuadrados dentro de los clusters al fusionarlos. Es más complejo, pero produce clusters más compactos.
 
