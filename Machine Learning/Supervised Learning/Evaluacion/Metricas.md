@@ -9,16 +9,16 @@ Cuando entrenamos modelos de machine learning, necesitamos medir qué tan bien e
 ### 1. Accuracy (Exactitud)
 - **¿Qué mide?** La proporción de predicciones correctas (tanto positivas como negativas) sobre el total de datos.
 - **Fórmula:**
-  
-  \[
+
+  $$
   \text{Accuracy} = \frac{TP + TN}{TP + TN + FP + FN}
-  \]
+  $$
 
   Donde:  
-  - *TP*: Verdaderos Positivos  
-  - *TN*: Verdaderos Negativos  
-  - *FP*: Falsos Positivos  
-  - *FN*: Falsos Negativos
+  - $TP$: Verdaderos Positivos  
+  - $TN$: Verdaderos Negativos  
+  - $FP$: Falsos Positivos  
+  - $FN$: Falsos Negativos
 
 - **Objetivo:** Saber qué porcentaje de todas las predicciones fueron correctas.
 
@@ -28,9 +28,9 @@ Cuando entrenamos modelos de machine learning, necesitamos medir qué tan bien e
 - **¿Qué mide?** De todas las veces que el modelo dijo "positivo", cuántas veces acertó realmente.
 - **Fórmula:**
 
-  \[
+  $$
   \text{Precision} = \frac{TP}{TP + FP}
-  \]
+  $$
 
 - **Objetivo:** Minimizar falsos positivos.
 
@@ -40,9 +40,9 @@ Cuando entrenamos modelos de machine learning, necesitamos medir qué tan bien e
 - **¿Qué mide?** De todos los positivos reales, cuántos fue capaz de detectar el modelo.
 - **Fórmula:**
 
-  \[
+  $$
   \text{Recall} = \frac{TP}{TP + FN}
-  \]
+  $$
 
 - **Objetivo:** Minimizar falsos negativos.
 
@@ -52,9 +52,9 @@ Cuando entrenamos modelos de machine learning, necesitamos medir qué tan bien e
 - **¿Qué mide?** El balance entre precisión y recall, es su promedio armónico.
 - **Fórmula:**
 
-  \[
+  $$
   F1 = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}}
-  \]
+  $$
 
 - **Objetivo:** Tener un solo número que combine precisión y recall.
 
@@ -64,7 +64,7 @@ Cuando entrenamos modelos de machine learning, necesitamos medir qué tan bien e
 - **¿Qué mide?** La capacidad del modelo para distinguir entre clases (positivo vs negativo) a diferentes umbrales.
 - **Concepto:**
 
-  Se grafica la tasa de verdaderos positivos (Recall) frente a la tasa de falsos positivos (FP / (FP + TN)) para distintos umbrales. El área bajo esta curva (AUC) indica el rendimiento general.
+  Se grafica la tasa de verdaderos positivos (Recall) frente a la tasa de falsos positivos $\left(\frac{FP}{FP + TN}\right)$ para distintos umbrales. El área bajo esta curva (AUC) indica el rendimiento general.
 
 - **Valor:**  
   - 1 = perfecto  
@@ -93,9 +93,9 @@ Cuando entrenamos modelos de machine learning, necesitamos medir qué tan bien e
 - **¿Qué mide?** El promedio de los cuadrados de los errores (diferencias entre valor real y predicho).
 - **Fórmula:**
 
-  \[
+  $$
   MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y_i})^2
-  \]
+  $$
 
 - **Objetivo:** Penalizar errores grandes, ideal para medir la precisión del modelo.
 
@@ -105,9 +105,9 @@ Cuando entrenamos modelos de machine learning, necesitamos medir qué tan bien e
 - **¿Qué mide?** Es la raíz cuadrada del MSE, para devolver el error a las mismas unidades de la variable original.
 - **Fórmula:**
 
-  \[
-  RMSE = \sqrt{MSE}
-  \]
+  $$
+  RMSE = \sqrt{MSE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y_i})^2}
+  $$
 
 - **Objetivo:** Interpretar el error en las mismas unidades de la variable objetivo.
 
@@ -117,9 +117,9 @@ Cuando entrenamos modelos de machine learning, necesitamos medir qué tan bien e
 - **¿Qué mide?** El promedio de las diferencias absolutas entre valor real y predicho.
 - **Fórmula:**
 
-  \[
+  $$
   MAE = \frac{1}{n} \sum_{i=1}^{n} |y_i - \hat{y_i}|
-  \]
+  $$
 
 - **Objetivo:** Medir el error promedio sin penalizar tanto los errores grandes como el MSE.
 
@@ -129,11 +129,11 @@ Cuando entrenamos modelos de machine learning, necesitamos medir qué tan bien e
 - **¿Qué mide?** Qué proporción de la variabilidad total de los datos es explicada por el modelo.
 - **Fórmula:**
 
-  \[
+  $$
   R^2 = 1 - \frac{\sum_{i=1}^n (y_i - \hat{y_i})^2}{\sum_{i=1}^n (y_i - \bar{y})^2}
-  \]
+  $$
 
-  Donde \(\bar{y}\) es el promedio de los valores reales.
+  Donde $\bar{y}$ es el promedio de los valores reales.
 
 - **Valor:**  
   - 1 = modelo perfecto  
