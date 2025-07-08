@@ -52,6 +52,7 @@ Ambos pueden tener bajo rendimiento si no se ajusta adecuadamente la regularizac
 ---
 
 ##  📈 Visualización
+![image](https://github.com/user-attachments/assets/e73bd199-31ee-4454-b52f-05682b731357)
 
 
 Comparación geométrica entre la penalización L1 (Lasso) y L2 (Ridge)
