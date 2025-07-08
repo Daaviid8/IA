@@ -26,9 +26,7 @@ Cuando entrenamos modelos de machine learning, necesitamos medir qué tan bien e
 - **¿Qué mide?** De todas las veces que el modelo dijo "positivo", cuántas veces acertó realmente.
 - **Fórmula:**
 
-  $$
-  \text{Precision} = \frac{TP}{TP + FP}
-  $$
+  $$\text{Precision} = \frac{TP}{TP + FP}$$
 
 - **Objetivo:** Minimizar falsos positivos.
 
@@ -38,9 +36,7 @@ Cuando entrenamos modelos de machine learning, necesitamos medir qué tan bien e
 - **¿Qué mide?** De todos los positivos reales, cuántos fue capaz de detectar el modelo.
 - **Fórmula:**
 
-  $$
-  \text{Recall} = \frac{TP}{TP + FN}
-  $$
+  $$\text{Recall} = \frac{TP}{TP + FN}$$
 
 - **Objetivo:** Minimizar falsos negativos.
 
@@ -50,9 +46,7 @@ Cuando entrenamos modelos de machine learning, necesitamos medir qué tan bien e
 - **¿Qué mide?** El balance entre precisión y recall, es su promedio armónico.
 - **Fórmula:**
 
-  $$
-  F1 = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}}
-  $$
+  $$F1 = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}}$$
 
 - **Objetivo:** Tener un solo número que combine precisión y recall.
 
@@ -91,9 +85,7 @@ Cuando entrenamos modelos de machine learning, necesitamos medir qué tan bien e
 - **¿Qué mide?** El promedio de los cuadrados de los errores (diferencias entre valor real y predicho).
 - **Fórmula:**
 
-  $$
-  MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y_i})^2
-  $$
+  $$MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y_i})^2$$
 
 - **Objetivo:** Penalizar errores grandes, ideal para medir la precisión del modelo.
 
@@ -103,9 +95,7 @@ Cuando entrenamos modelos de machine learning, necesitamos medir qué tan bien e
 - **¿Qué mide?** Es la raíz cuadrada del MSE, para devolver el error a las mismas unidades de la variable original.
 - **Fórmula:**
 
-  $$
-  RMSE = \sqrt{MSE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y_i})^2}
-  $$
+  $$RMSE = \sqrt{MSE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y_i})^2}$$
 
 - **Objetivo:** Interpretar el error en las mismas unidades de la variable objetivo.
 
@@ -115,9 +105,7 @@ Cuando entrenamos modelos de machine learning, necesitamos medir qué tan bien e
 - **¿Qué mide?** El promedio de las diferencias absolutas entre valor real y predicho.
 - **Fórmula:**
 
-  $$
-  MAE = \frac{1}{n} \sum_{i=1}^{n} |y_i - \hat{y_i}|
-  $$
+  $$MAE = \frac{1}{n} \sum_{i=1}^{n} |y_i - \hat{y_i}|$$
 
 - **Objetivo:** Medir el error promedio sin penalizar tanto los errores grandes como el MSE.
 
@@ -127,9 +115,7 @@ Cuando entrenamos modelos de machine learning, necesitamos medir qué tan bien e
 - **¿Qué mide?** Qué proporción de la variabilidad total de los datos es explicada por el modelo.
 - **Fórmula:**
 
-  $$
-  R^2 = 1 - \frac{\sum_{i=1}^n (y_i - \hat{y_i})^2}{\sum_{i=1}^n (y_i - \bar{y})^2}
-  $$
+  $$R^2 = 1 - \frac{\sum_{i=1}^n (y_i - \hat{y_i})^2}{\sum_{i=1}^n (y_i - \bar{y})^2}$$
 
   Donde $\bar{y}$ es el promedio de los valores reales.
 
