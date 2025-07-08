@@ -6,28 +6,24 @@ La **regresión lineal** es uno de los algoritmos más sencillos y fundamentales
 
 ## 🎯 ¿Qué hace?
 
-Busca encontrar la **mejor recta (o hiperplano)** que predice un valor continuo \( \hat{y} \) a partir de variables de entrada \( \mathbf{x} \), utilizando la fórmula:
+Busca encontrar la **mejor recta (o hiperplano)** que predice un valor continuo ŷ a partir de variables de entrada x, utilizando la fórmula:
 
-\[
-\hat{y} = \mathbf{w}^\top \mathbf{x} + b
-\]
+ŷ = wᵀ·x + b
 
 Donde:
 
-- \( \mathbf{x} \): vector de características (inputs)
-- \( \mathbf{w} \): pesos (coeficientes del modelo)
-- \( b \): término independiente (bias)
-- \( \hat{y} \): predicción del modelo
+- x: vector de características (inputs)
+- wᵀ: pesos (coeficientes del modelo)
+- b: término independiente (bias)
+- ŷ: predicción del modelo
 
 ---
 
 ## ⚙️ ¿Cómo se entrena?
 
-Se ajustan los parámetros \( \mathbf{w} \) y \( b \) minimizando una **función de pérdida**, generalmente el **error cuadrático medio (MSE)**:
+Se ajustan los parámetros wᵀ y b minimizando una **función de pérdida**, generalmente el **error cuadrático medio (MSE)**:
 
-\[
-\text{MSE} = \frac{1}{m} \sum_{i=1}^{m} (\hat{y}_i - y_i)^2
-\]
+MSE = (1/m) * Σ (ŷᵢ - yᵢ)²
 
 Métodos comunes:
 
